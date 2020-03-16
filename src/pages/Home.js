@@ -1,13 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {connect} from "react-redux";
 
-function Dashboard() {
+function Home() {
   return (
     <nav className="flex bg-gray-800 fixed w-full">
       <div className="flex w-full pt-0" id="nav-content">
         <div className="w-1/2 text-left">
-          <Link className="inline-block text-lg py-2 px-5 text-white" href="/dashboard">
+          <Link className="inline-block text-lg py-2 px-5 text-white" href="/home">
             React
           </Link>
         </div>
@@ -21,8 +20,4 @@ function Dashboard() {
   );
 }
 
-const mapStateToProps = state => ({
-  user: state.user,
-});
-
-export default connect(mapStateToProps, null)(Dashboard);
+export default Home;
